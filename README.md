@@ -53,8 +53,11 @@ Para ejecutar el proyecto en tu entorno local, sigue los siguientes pasos:
 
 ## Uso
 >Registro y Verificación: Los estudiantes deben registrarse utilizando su correo universitario o escaneando su carnet para ser verificados. Una vez registrados, pueden crear un perfil y seleccionar su tipo de conexión.
+>
 >Búsqueda y Matchmaking: Los usuarios pueden utilizar filtros avanzados para buscar otros estudiantes según intereses, universidad y carrera. El algoritmo de matchmaking sugiere perfiles relevantes.
+>
 >Mensajería y Notificaciones: Los usuarios pueden iniciar conversaciones con sus matches a través del sistema de chat y recibir notificaciones en tiempo real de nuevos mensajes y conexiones.
+>
 >Eventos y Networking: La aplicación incluye una funcionalidad de eventos que permite a los estudiantes unirse a eventos académicos, sociales o profesionales organizados en el campus.
 
 ---
