@@ -67,16 +67,20 @@ Para ejecutar el proyecto en tu entorno local, sigue los siguientes pasos:
 Este proyecto es parte de un curso universitario, por lo que actualmente no se aceptan contribuciones externas. Sin embargo, cualquier feedback o sugerencia es bienvenido para mejorar la experiencia del usuario.
 Autores
 
-    Nicolás Francisco Camacho Alarcón
-    [Poner aqui el resto de nombres]
+-Nicolás Francisco Camacho Alarcón
+-[Poner aqui el resto de nombres]
 
-##Estado del Proyecto
+---
+
+## Estado del proyecto
 
 El proyecto se encuentra en desarrollo activo como parte de un curso universitario de Computación Móvil. Se espera que la implementación completa esté lista para finales del semestre, cumpliendo con todos los requerimientos funcionales y no funcionales especificados en el plan de trabajo.
-Licencia
+---
 
+## Licencia
 Este proyecto es de uso exclusivo para fines educativos dentro de la Universidad Javeriana y no puede ser distribuido o utilizado fuera de este contexto sin permiso previo.
-##Recursos Adicionales
+---
 
+## Recursos Adicionales
     Guía de Material Design
     Firebase Documentation
