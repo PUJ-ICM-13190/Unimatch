@@ -33,8 +33,8 @@ Para ejecutar el proyecto en tu entorno local, sigue los siguientes pasos:
 
 1. Clona este repositorio:
    `
-   git clone [https://github.com/tu-repositorio/unimatch.git](https://github.com/PUJ-ICM-13190/Unimatch)
-   bash`
+   git clone https://github.com/tu-repositorio/unimatch.git
+   `
 
 2. Abre el proyecto en Android Studio.
 
