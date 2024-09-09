@@ -65,7 +65,9 @@ Para ejecutar el proyecto en tu entorno local, sigue los siguientes pasos:
 ## Contribucion
 
 Este proyecto es parte de un curso universitario, por lo que actualmente no se aceptan contribuciones externas. Sin embargo, cualquier feedback o sugerencia es bienvenido para mejorar la experiencia del usuario.
-Autores
+---
+
+## Autores
 
 - Nicolás Francisco Camacho Alarcón
 - [Poner aqui el resto de nombres]
