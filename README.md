@@ -32,44 +32,45 @@
 Para ejecutar el proyecto en tu entorno local, sigue los siguientes pasos:
 
 1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-repositorio/unimatch.git
+   `
+   git clone [https://github.com/tu-repositorio/unimatch.git](https://github.com/PUJ-ICM-13190/Unimatch)
+   bash`
 
-    Abre el proyecto en Android Studio.
+2. Abre el proyecto en Android Studio.
 
-    Sincroniza el proyecto con Gradle para descargar todas las dependencias necesarias.
+3. Sincroniza el proyecto con Gradle para descargar todas las dependencias necesarias.
 
-    Configura Firebase:
-        Registra tu aplicación en Firebase.
-        Descarga el archivo google-services.json y colócalo en la carpeta app/ del proyecto.
-        Habilita Firebase Authentication y Realtime Database en el panel de Firebase.
+4. Configura Firebase:
+        >Registra tu aplicación en Firebase.
+        >Descarga el archivo google-services.json y colócalo en la carpeta app/ del proyecto.
+        >Habilita Firebase Authentication y Realtime Database en el panel de Firebase.
 
-    Conecta un emulador o dispositivo físico Android para probar la aplicación.
+5. Conecta un emulador o dispositivo físico Android para probar la aplicación.
 
-    Ejecuta la aplicación desde Android Studio.
+6. Ejecuta la aplicación desde Android Studio.
 
-Uso
+##Uso
 
-    Registro y Verificación: Los estudiantes deben registrarse utilizando su correo universitario o escaneando su carnet para ser verificados. Una vez registrados, pueden crear un perfil y seleccionar su tipo de conexión.
-    Búsqueda y Matchmaking: Los usuarios pueden utilizar filtros avanzados para buscar otros estudiantes según intereses, universidad y carrera. El algoritmo de matchmaking sugiere perfiles relevantes.
-    Mensajería y Notificaciones: Los usuarios pueden iniciar conversaciones con sus matches a través del sistema de chat y recibir notificaciones en tiempo real de nuevos mensajes y conexiones.
-    Eventos y Networking: La aplicación incluye una funcionalidad de eventos que permite a los estudiantes unirse a eventos académicos, sociales o profesionales organizados en el campus.
+    >Registro y Verificación: Los estudiantes deben registrarse utilizando su correo universitario o escaneando su carnet para ser verificados. Una vez registrados, pueden crear un perfil y seleccionar su tipo de conexión.
+    >Búsqueda y Matchmaking: Los usuarios pueden utilizar filtros avanzados para buscar otros estudiantes según intereses, universidad y carrera. El algoritmo de matchmaking sugiere perfiles relevantes.
+    >Mensajería y Notificaciones: Los usuarios pueden iniciar conversaciones con sus matches a través del sistema de chat y recibir notificaciones en tiempo real de nuevos mensajes y conexiones.
+    >Eventos y Networking: La aplicación incluye una funcionalidad de eventos que permite a los estudiantes unirse a eventos académicos, sociales o profesionales organizados en el campus.
 
-Contribución
+##Contribución
 
 Este proyecto es parte de un curso universitario, por lo que actualmente no se aceptan contribuciones externas. Sin embargo, cualquier feedback o sugerencia es bienvenido para mejorar la experiencia del usuario.
 Autores
 
     Nicolás Francisco Camacho Alarcón
-    [Colaboradores adicionales si corresponde]
+    [Poner aqui el resto de nombres]
 
-Estado del Proyecto
+##Estado del Proyecto
 
 El proyecto se encuentra en desarrollo activo como parte de un curso universitario de Computación Móvil. Se espera que la implementación completa esté lista para finales del semestre, cumpliendo con todos los requerimientos funcionales y no funcionales especificados en el plan de trabajo.
 Licencia
 
 Este proyecto es de uso exclusivo para fines educativos dentro de la Universidad Javeriana y no puede ser distribuido o utilizado fuera de este contexto sin permiso previo.
-Recursos Adicionales
+##Recursos Adicionales
 
     Guía de Material Design
     Firebase Documentation
