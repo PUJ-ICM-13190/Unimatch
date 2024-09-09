@@ -78,10 +78,12 @@ Este proyecto es parte de un curso universitario, por lo que actualmente no se a
 ## Estado del proyecto
 
 El proyecto se encuentra en desarrollo activo como parte de un curso universitario de Computación Móvil. Se espera que la implementación completa esté lista para finales del semestre, cumpliendo con todos los requerimientos funcionales y no funcionales especificados en el plan de trabajo.
+
 ---
 
 ## Licencia
 Este proyecto es de uso exclusivo para fines educativos dentro de la Universidad Javeriana y no puede ser distribuido o utilizado fuera de este contexto sin permiso previo.
+
 ---
 
 ## Recursos Adicionales
