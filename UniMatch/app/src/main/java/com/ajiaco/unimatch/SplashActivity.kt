@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ajiaco.unimatch.databinding.ActivitySplashBinding
 import com.ajiaco.unimatch.ui.OnboardingActivity
+import com.ajiaco.unimatch.ui.SelectionActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySplashBinding
@@ -31,7 +32,7 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(Intent(this, OnboardingActivity::class.java))
             } else {
                 // Si ya no es la primera vez, ir a la pantalla principal
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, SelectionActivity::class.java))
             }
             finish()
         }, 5000) // Retraso de 5 segundos
