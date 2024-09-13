@@ -35,6 +35,6 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(Intent(this, SelectionActivity::class.java))
             }
             finish()
-        }, 5000) // Retraso de 5 segundos
+        }, 1000) // Retraso de 5 segundos
     }
 }
