@@ -30,7 +30,7 @@ class ConnectionTypeSelectionActivity : AppCompatActivity() {
 
     private fun navigateToMatchmaking(type: String) {
         // Aquí puedes agregar lógica adicional para pasar información del tipo de conexión seleccionada
-        val intent = Intent(this, MatchmakingActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         intent.putExtra("connection_type", type)
         startActivity(intent)
         finish() // Finalizar esta actividad para que no se pueda volver atrás fácilmente
