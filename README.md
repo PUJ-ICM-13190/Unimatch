@@ -73,6 +73,7 @@ Este proyecto es parte de un curso universitario, por lo que actualmente no se a
 - Nicolás Francisco Camacho Alarcón
 - Luis Felipe Gutiérrez Rodríguez
 - Maria Daniela Moreno Leon
+- Jerónimo Vanegas Jiménez
 ---
 
 ## Estado del proyecto
