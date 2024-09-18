@@ -1,0 +1,58 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Natalia Echeverry",
+      "age": 20,
+      "bio": "Estudiante de Ingeniería de sistemas de sexto semestre. Me gusta mucho bailar, en especial los generos urbanos, también me gusta leer y escuchar música. En mis tiempos libres me gusta viajar, dibujar y estar con mis amigos y familia.",
+      "interests": ["Bailar", "Leer", "Música", "Viajar", "Dibujar"],
+      "imageUrl": "https://github.com/user-attachments/assets/52933fbf-2655-42a8-a7ec-c1e3c8090dbc",
+      "universidad": "Universidad Javeriana"
+    },
+    {
+      "id": 2,
+      "name": "Nicolás Camacho",
+      "age": 21,
+      "bio": "Mas risa que persona, adicto a Beiked, al helado de galleta y al chisme. Fan #1 de mi perrita, fluidez 100% en spanglish, a veces con delirio de cantante de karaoke, siempre experto en hablar de pendejadas relevantes.",
+      "interests": ["Beiked", "Helado de galleta", "Karaoke", "Spanglish"],
+      "imageUrl": "https://github.com/user-attachments/assets/ef8889b8-4d94-422c-89e7-62a4a47d88f8",
+      "universidad": "Universidad Javeriana"
+    },
+    {
+      "id": 3,
+      "name": "Esteban Altamiranda",
+      "age": 22,
+      "bio": "Futuro ingeniero de sistemas muy poco profesionalisado amante de la crema de pollo, jugador profesional de nada, le encanta la musica pop, rock, y diomedes dias, no se hablar casi casi nada.",
+      "interests": ["Crema de pollo", "Música pop", "Música rock", "Diomedes Díaz"],
+      "imageUrl": "https://github.com/user-attachments/assets/d56888b3-25db-4fde-810f-f81b016b1622",
+      "universidad": "Universidad Javeriana"
+    },
+    {
+      "id": 4,
+      "name": "Jeronimo Vanegas",
+      "age": 21,
+      "bio": "Estudiante de ingeniería de sistema en sexto semestre. Me gusta pintar, el senderismo, practicar deportes y la fotografía. Fan de las mascotas y series de supervivencia.",
+      "interests": ["Pintar", "Senderismo", "Deportes", "Fotografía", "Mascotas", "Series de supervivencia"],
+      "imageUrl": "https://github.com/user-attachments/assets/2199e132-0520-4376-9b61-3bd0752c7924",
+      "universidad": "Universidad Javeriana"
+    },
+    {
+      "id": 5,
+      "name": "Luis Gutiérrez",
+      "age": 20,
+      "bio": "Estudiante de ingeniería de sistemas en quinto semestre. Me gusta leer, tocar guitarra y practicar deportes. Siempre pensando en algo nuevo para hacer. Fanático de los gatos y la pasta.",
+      "interests": ["Leer", "Tocar guitarra", "Deportes", "Gatos", "Pasta"],
+      "imageUrl": "https://github.com/user-attachments/assets/2cc703cc-5130-4091-a63d-06e89300d8db",
+      "universidad": "Universidad Javeriana"
+    },
+    {
+      "id": 6,
+      "name": "María Daniela Moreno",
+      "age": 21,
+      "bio": "Estudiante de ingeniería de sistemas en sexto semestre. Me gusta la repostería y ver series, de vez en cuando hacer ejercicio. Fan de gastarme la plata en conciertos.",
+      "interests": ["Repostería", "Ver series", "Ejercicio", "Conciertos"],
+      "imageUrl": "https://github.com/user-attachments/assets/8fd31569-45eb-4f31-8f38-a840c0a57f1c",
+      "universidad": "Universidad Javeriana"
+    }
+  ]
+}
