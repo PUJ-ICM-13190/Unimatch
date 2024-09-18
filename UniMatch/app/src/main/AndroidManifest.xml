@@ -77,6 +77,10 @@
         <activity
             android:name=".ConnectionTypeSelectionActivity"
             android:exported="true" />
+        <activity android:name=".SuccessfulMatchActivity" />
+        <activity android:name=".UniMatchSwipeActivity" />
+        <activity android:name=".FiltersActivity" />
+        <activity android:name=".EventsActivity" />
 
     </application>
 
