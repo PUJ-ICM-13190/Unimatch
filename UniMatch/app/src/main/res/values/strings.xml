@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">UniMatch</string>
     <string name="splash_logo_description">Logo de Unimatch</string>
+    <array name="initial_slider_values">
+            <item>18</item>
+            <item>26</item>
+    </array>
 </resources>
