@@ -97,7 +97,7 @@
             android:id="@+id/profile_image"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="@drawable/ic_default_user"
+            android:src="@drawable/ic_profile"
             android:layout_marginBottom="8dp"
             tools:ignore="MissingConstraints" />
 
@@ -160,7 +160,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/ic_default_user"
+            android:src="@drawable/ic_profile"
             tools:ignore="MissingConstraints" />
 
         <TextView
