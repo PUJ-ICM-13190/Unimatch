@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <!-- Título centrado con estilo estándar -->
     <TextView
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
@@ -15,38 +16,50 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
 
+    <!-- Botón de Amor, centrado y con espacio entre los elementos -->
     <Button
         android:id="@+id/buttonAmor"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Amor"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/orange"
         app:layout_constraintTop_toBottomOf="@id/textTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonAmistad"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="24dp"
+        app:layout_constraintWidth_percent="0.8"/>
 
+    <!-- Botón de Amistad -->
     <Button
         android:id="@+id/buttonAmistad"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Amistad"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/orange"
         app:layout_constraintTop_toBottomOf="@id/buttonAmor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonNetworking"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
 
+    <!-- Botón de Networking -->
     <Button
         android:id="@+id/buttonNetworking"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Networking"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/orange"
         app:layout_constraintTop_toBottomOf="@id/buttonAmistad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

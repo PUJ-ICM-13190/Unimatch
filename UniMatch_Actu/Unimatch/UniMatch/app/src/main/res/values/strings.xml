@@ -2,4 +2,9 @@
     <string name="app_name">UniMatch</string>
     <string name="splash_logo_description">Logo de Unimatch</string>
     <string name="terminos">Al registrarte aceptas nuestros Términos y\nVe cómo utilizamos tus datos en nuestra Política de Privacidad</string>
+    <string name="verificacion">Hemos enviado un correo de verificación a tu cuenta.</string>
+    <array name="initial_slider_values">
+        <item>18</item>
+        <item>26</item>
+    </array>
 </resources>

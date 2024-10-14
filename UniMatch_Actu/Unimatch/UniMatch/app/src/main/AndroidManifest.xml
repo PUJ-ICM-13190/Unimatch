@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ajiaco.unimatch">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -73,11 +75,17 @@
             android:name=".MatchmakingActivity"
             android:exported="true" />
 
-        <!-- Pantalla para seleccionar tipo de conexión (Amor, Amistad, Networking) -->
+        <!-- Pantalla para seleccionar tipo de conexión -->
         <activity
             android:name=".ConnectionTypeSelectionActivity"
             android:exported="true" />
 
+        <!-- Actividades adicionales -->
+        <activity android:name=".PersonalProfileActivity" android:exported="false" />
+        <activity android:name=".ChatsGrupalesActivity" android:exported="false" />
+        <activity android:name=".SuccessfulMatchActivity" />
+        <activity android:name=".UniMatchSwipeActivity" />
+        <activity android:name=".FiltersActivity" />
+        <activity android:name=".EventsActivity" />
     </application>
-
 </manifest>

@@ -9,49 +9,69 @@
     <!-- Campo para ingresar el nombre -->
     <EditText
         android:id="@+id/input_name"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Nombre"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="32dp"/>
 
     <!-- Campo para ingresar la universidad -->
     <EditText
         android:id="@+id/input_university"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Universidad"
+        android:padding="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/input_name"/>
+        app:layout_constraintTop_toBottomOf="@id/input_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"/>
 
     <!-- Campo para ingresar la carrera -->
     <EditText
         android:id="@+id/input_major"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Carrera"
+        android:padding="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/input_university"/>
+        app:layout_constraintTop_toBottomOf="@id/input_university"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"/>
 
     <!-- Botón para seleccionar foto de perfil -->
     <Button
         android:id="@+id/button_select_profile_picture"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Seleccionar foto de perfil"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#f9623e"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/input_major"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"/>
 
     <!-- Botón para guardar perfil y continuar -->
     <Button
         android:id="@+id/button_save_profile"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Guardar y Continuar"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#f9623e"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@id/button_select_profile_picture"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

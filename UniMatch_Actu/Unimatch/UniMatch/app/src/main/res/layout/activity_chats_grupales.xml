@@ -1,10 +1,11 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ChatsGrupalesActivity">
 
     <View
         android:layout_width="match_parent"
@@ -12,7 +13,8 @@
         android:layout_marginTop="12dp"
         android:background="#808080"
         app:layout_constraintTop_toBottomOf="@+id/tabsLayout"
-         />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/tabsLayout"
@@ -21,7 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="87dp">
 
         <TextView
             android:id="@+id/tabMatches"
@@ -31,7 +34,8 @@
             android:text="Matches (7)"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-             />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/tabGroups"
@@ -41,7 +45,8 @@
             android:textColor="#f9623e"
             android:text="Grupos (2)"
             app:layout_constraintStart_toEndOf="@id/tabMatches"
-             />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/tabCommunity"
@@ -50,7 +55,8 @@
             android:layout_marginStart="60dp"
             android:text="Comunidades (6)"
             app:layout_constraintStart_toEndOf="@id/tabGroups"
-             />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -60,7 +66,8 @@
         android:layout_marginBottom="12dp"
         android:background="#808080"
         app:layout_constraintBottom_toTopOf="@+id/tabsLayout"
-         />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/chatsTitle"
@@ -199,5 +206,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
