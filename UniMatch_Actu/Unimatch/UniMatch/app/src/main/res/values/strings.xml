@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UniMatch</string>
+    <string name="splash_logo_description">Logo de Unimatch</string>
+    <string name="terminos">Al registrarte aceptas nuestros Términos y\nVe cómo utilizamos tus datos en nuestra Política de Privacidad</string>
+</resources>
