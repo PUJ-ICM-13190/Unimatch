@@ -26,14 +26,16 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.inputPassword.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                // Simulación de inicio de sesión. Aquí podrías agregar validación real
-                startActivity(Intent(this, ConnectionTypeSelectionActivity::class.java))
-                finish() // Finaliza la actividad para que no se pueda volver atrás fácilmente
+                // Navegación directa a MainActivity para abrir matchmaking
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("navigate_to", "matchmaking")  // Extra opcional si quieres controlar navegación
+                startActivity(intent)
+                finish() // Finaliza esta actividad para que no se pueda volver atrás fácilmente
             } else {
-                // Mensaje de error si los campos están vacíos
                 Toast.makeText(this, "Por favor, ingrese su correo y contraseña", Toast.LENGTH_SHORT).show()
             }
         }
+
 
     }
 }

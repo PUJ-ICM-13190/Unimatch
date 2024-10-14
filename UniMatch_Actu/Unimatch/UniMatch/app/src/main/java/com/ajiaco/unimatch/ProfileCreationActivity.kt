@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.ajiaco.unimatch.ConnectionTypeSelectionActivity
+import com.ajiaco.unimatch.MainActivity
+import com.ajiaco.unimatch.MatchmakingActivity
 import com.ajiaco.unimatch.databinding.ActivityProfileCreationBinding
 
 class ProfileCreationActivity : AppCompatActivity() {
@@ -31,7 +33,10 @@ class ProfileCreationActivity : AppCompatActivity() {
                 // Lógica para guardar la información del perfil
 
                 // Navegación a la siguiente pantalla (Selección de Tipo de Conexión)
-                startActivity(Intent(this, ConnectionTypeSelectionActivity::class.java))
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("navigate_to", "matchmaking")  // Si quieres pasar algún extra opcional
+                startActivity(intent)
+                finish()  // Finaliza esta actividad para que no pueda regresar fácilmente
             } else {
                 Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
             }

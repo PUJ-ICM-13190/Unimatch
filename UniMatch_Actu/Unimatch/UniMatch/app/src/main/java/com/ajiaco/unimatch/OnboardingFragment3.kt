@@ -18,7 +18,7 @@ class OnboardingFragment3 : Fragment(R.layout.fragment_onboarding_3) {
 
         // Lógica para navegar a la MainActivity al presionar el botón "Empezar"
         binding.buttonStart.setOnClickListener {
-            val intent = Intent(activity, MainActivity::class.java)
+            val intent = Intent(activity, SelectionActivity::class.java)
             startActivity(intent)
             activity?.finish()
         }
