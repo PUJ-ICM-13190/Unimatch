@@ -1,0 +1,110 @@
+@startuml
+
+class Usuario {
+    +id: String
+    +nombre: String
+    +email: String
+    +contraseña: String
+    +universidad: String
+    +fotoPerfil: String
+    +intereses: List<String>
+    +darLike(usuario: Usuario): void
+    +darDislike(usuario: Usuario): void
+    +verMatches(): List<Match>
+    +crearGrupo(nombre: String, descripcion: String): Grupo
+    +unirseA(grupo: Grupo): void
+    +salirDe(grupo: Grupo): void
+    +crearEvento(grupo: Grupo, nombre: String): Evento
+}
+
+class Like {
+    +id: String
+    +usuarioEmisor: Usuario
+    +usuarioReceptor: Usuario
+    +mutuo: Boolean
+}
+
+class Match {
+    +id: String
+    +usuarios: List<Usuario> [2]
+    +chat: Chat
+}
+
+class Grupo {
+    +id: String
+    +nombre: String
+    +descripcion: String
+    +privacidad: String
+    +miembros: List<Usuario>
+    +administradores: List<Usuario>
+    +eventos: List<Evento>
+    +chatGrupal: Chat
+    +solicitudes: List<SolicitudIngreso>
+    +agregarMiembro(usuario: Usuario): void
+    +removerMiembro(usuario: Usuario): void
+    +promoverAdministrador(usuario: Usuario): void
+}
+
+class Evento {
+    +id: String
+    +nombre: String
+    +fecha: Date
+    +ubicacion: String
+    +publico: Boolean
+    +asistentes: List<Usuario>
+    +unirse(usuario: Usuario): void
+    +salir(usuario: Usuario): void
+    +cancelar(): void
+}
+
+class Cita {
+    +fecha: Date
+    +ubicacion: String
+}
+
+Evento <|-- Cita : es una
+
+class SolicitudIngreso {
+    +id: String
+    +usuario: Usuario
+    +estado: String
+    +aceptar(): void
+    +rechazar(): void
+}
+
+class Chat {
+    +id: String
+    +usuarios: List<Usuario>
+    +mensajes: List<Mensaje>
+    +enviarMensaje(contenido: String): void
+    +reportarUsuario(usuario: Usuario): void
+}
+
+class Mensaje {
+    +id: String
+    +contenido: String
+    +timestamp: Date
+    +autor: Usuario
+}
+
+class Premium {
+    +id: String
+    +tipo: String
+    +superLikes: int
+    +filtrosAvanzados: bool
+}
+
+Usuario --> "0..*" Like : Envia
+Like --> Usuario : Receptor
+Like --> Match : Genera si es mutuo
+Usuario --> "0..1" Premium : Suscrito
+Usuario --> "1..*" Chat : Conversación
+Grupo --> "1" Chat : Chat grupal
+Grupo --> "1..*" Evento
+Grupo --> "0..*" SolicitudIngreso
+Evento --> "1..*" Usuario : Asistentes
+Match --> Cita : Puede tener
+Match --> "1" Chat : Conversación privada
+Chat --> "1..*" Mensaje : Contiene
+
+@enduml
