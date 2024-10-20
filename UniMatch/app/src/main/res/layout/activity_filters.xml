@@ -34,6 +34,7 @@
                 android:layout_marginBottom="16dp"
                 android:valueFrom="18"
                 android:valueTo="26"
+                android:stepSize="1"
                 android:contentDescription="Seleccione el rango de edad"
                 app:values="@array/initial_slider_values" />
 
