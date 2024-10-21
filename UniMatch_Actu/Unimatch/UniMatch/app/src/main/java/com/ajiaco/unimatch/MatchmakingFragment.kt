@@ -1,6 +1,5 @@
 package com.ajiaco.unimatch.ui
 
-
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.os.Bundle
@@ -25,6 +24,7 @@ import com.ajiaco.unimatch.R
 import com.ajiaco.unimatch.SuccessfulMatchActivity
 import com.ajiaco.unimatch.FiltersActivity
 import kotlin.math.abs
+import androidx.appcompat.app.AppCompatActivity
 
 class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
     private lateinit var cardView: View
@@ -44,11 +44,15 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
 
     private var currentUserImageUrl: String = ""
 
+    // Request code for filters
+    private val REQUEST_FILTERS = 1001
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_matchmaking, container, false)
 
         initializeViews(view)
         setupListeners()
+
         loadProfiles()
         loadCurrentUserImageUrl()
         displayCurrentProfile()
@@ -79,8 +83,9 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
         }
 
         filterButton.setOnClickListener {
+            // Iniciar la actividad de filtros y esperar resultados
             val intent = Intent(requireContext(), FiltersActivity::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, REQUEST_FILTERS)
         }
     }
 
@@ -112,6 +117,32 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
         }
     }
 
+    // Recibir el resultado de los filtros aplicados
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_FILTERS && resultCode == AppCompatActivity.RESULT_OK) {
+            val minAge = data?.getIntExtra("MIN_AGE", 18) ?: 18
+            val maxAge = data?.getIntExtra("MAX_AGE", 100) ?: 100
+            val maxDistance = data?.getIntExtra("MAX_DISTANCE", 50) ?: 50
+            val selectedGender = data?.getStringExtra("SELECTED_GENDER") ?: "Todos"
+            val selectedInterests = data?.getStringArrayExtra("SELECTED_INTERESTS")?.toList() ?: emptyList()
+
+            // Aplicar los filtros
+            filterProfiles(minAge, maxAge, maxDistance, selectedGender, selectedInterests)
+        }
+    }
+
+    private fun filterProfiles(minAge: Int, maxAge: Int, maxDistance: Int, selectedGender: String, selectedInterests: List<String>) {
+        profiles = profiles.filter { profile ->
+            profile.age in minAge..maxAge &&
+                    (selectedGender == "Todos" || profile.gender == selectedGender) &&
+                    profile.interests.any { it in selectedInterests }
+        }
+        currentProfileIndex = 0 // Reiniciar el índice de perfil
+        displayCurrentProfile() // Mostrar el primer perfil filtrado
+    }
+
+    // Gesto de deslizamiento (swipe) hacia la derecha e izquierda
     override fun onDown(e: MotionEvent): Boolean = true
 
     override fun onFling(e1: MotionEvent?, e2: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
@@ -128,15 +159,17 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
     }
 
     private fun onSwipeRight() {
-        animateSwipe(1000f, likeIcon)
-        cardView.postDelayed({
+        if (currentProfileIndex < profiles.size) {
             val currentProfile = profiles[currentProfileIndex]
-            val intent = Intent(requireContext(), SuccessfulMatchActivity::class.java).apply {
-                putExtra("USER1_IMAGE_URL", currentUserImageUrl)
-                putExtra("USER2_IMAGE_URL", currentProfile.imageUrl)
-            }
-            startActivity(intent)
-        }, 300)
+            animateSwipe(1000f, likeIcon)
+            cardView.postDelayed({
+                val intent = Intent(requireContext(), SuccessfulMatchActivity::class.java).apply {
+                    putExtra("USER1_IMAGE_URL", currentUserImageUrl)
+                    putExtra("USER2_IMAGE_URL", currentProfile.imageUrl)
+                }
+                startActivity(intent)
+            }, 300)
+        }
     }
 
     private fun onSwipeLeft() {
