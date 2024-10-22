@@ -25,8 +25,14 @@ import com.ajiaco.unimatch.SuccessfulMatchActivity
 import com.ajiaco.unimatch.FiltersActivity
 import kotlin.math.abs
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Context
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
+import kotlin.math.sqrt
 
-class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
+class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener,  SensorEventListener{
     private lateinit var cardView: View
     private lateinit var likeIcon: View
     private lateinit var dislikeIcon: View
@@ -38,6 +44,12 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
     private lateinit var toolbar: Toolbar
     private lateinit var backButton: ImageButton
     private lateinit var filterButton: ImageButton
+    private lateinit var sensorManager: SensorManager
+    
+    private var accelerometer: Sensor? = null
+    private var lastShakeTime: Long = 0
+    private val shakeThreshold = 12.0f  // Umbral para detectar sacudidas
+    private val shakeCooldown = 1000
 
     private var profiles: List<Profile> = emptyList()
     private var currentProfileIndex = 0
@@ -57,7 +69,22 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
         loadCurrentUserImageUrl()
         displayCurrentProfile()
 
+        sensorManager = requireContext().getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+        accelerometer?.let {
+            sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_UI)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        sensorManager.unregisterListener(this)
     }
 
     private fun initializeViews(view: View) {
@@ -115,6 +142,28 @@ class MatchmakingFragment : Fragment(), GestureDetector.OnGestureListener {
                 .centerCrop()
                 .into(profileImage)
         }
+    }
+
+    override fun onSensorChanged(event: SensorEvent) {
+        if (event.sensor.type == Sensor.TYPE_ACCELEROMETER) {
+            val x = event.values[0]
+            val y = event.values[1]
+            val z = event.values[2]
+
+            // Calcular la magnitud de la aceleración
+            val acceleration = sqrt(x * x + y * y + z * z) - SensorManager.GRAVITY_EARTH
+
+            // Verificar si la aceleración excede el umbral y si ha pasado suficiente tiempo
+            val currentTime = System.currentTimeMillis()
+            if (acceleration > shakeThreshold && currentTime - lastShakeTime > shakeCooldown) {
+                lastShakeTime = currentTime
+                // Acción de "like" al detectar una sacudida fuerte -> Ejecuta onSwipeLeft
+                onSwipeRight()
+            }
+        }
+    }
+    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+        // No es necesario implementar esto en nuestro caso
     }
 
     // Recibir el resultado de los filtros aplicados
