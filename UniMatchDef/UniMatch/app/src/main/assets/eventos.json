@@ -1,0 +1,24 @@
+[
+  {
+    "id": "3",
+    "titulo": "Feria Gastronómica",
+    "fecha": "2024-11-25",
+    "lugar": "Parque Central",
+    "latitud": 4.648283,
+    "longitud": -74.078174,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.8poSsFz5L9_weulGGEKCBQHaE8?rs=1&pid=ImgDetMain",
+    "descripcion": "Disfruta de la mejor comida de la región con más de 50 stands.",
+    "precio": null
+  },
+  {
+    "id": "4",
+    "titulo": "Taller de Fotografía",
+    "fecha": "2024-11-20",
+    "lugar": "Centro Cultural",
+    "latitud": 4.659121,
+    "longitud": -74.079515,
+    "imagenUrl": "https://th.bing.com/th/id/R.5b7210176a799448a5f1f2acb684ba80?rik=1pgkH3i%2fvfE3Tg&pid=ImgRaw&r=0",
+    "descripcion": "Aprende técnicas avanzadas de fotografía de la mano de expertos.",
+    "precio": 30.00
+  }
+]

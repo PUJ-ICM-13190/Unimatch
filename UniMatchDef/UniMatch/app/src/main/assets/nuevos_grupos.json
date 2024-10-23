@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ng1",
+    "nombre": "Grupo de Investigación en IA",
+    "facultad": "Facultad de Ingeniería",
+    "carrera": "Ingeniería de Sistemas",
+    "descripcion": "Nuevo grupo de investigación enfocado en Inteligencia Artificial y Machine Learning. Buscamos estudiantes interesados en desarrollar proyectos innovadores.",
+    "imagenUrl": "https://thebluemanakin.com/wp-content/uploads/2023/08/ai-research-1000x450.jpg",
+    "numMiembros": 12,
+    "tipo": "Académico",
+    "requisitos": "Conocimientos en Python y estadística",
+    "administrador": "María Torres",
+    "enlaces": {
+      "discord": "https://discord.gg/grupo-ia",
+      "github": "https://github.com/grupo-ia"
+    }
+  },
+  {
+    "id": "ng2",
+    "nombre": "Club de Fotografía",
+    "facultad": "Todas las Facultades",
+    "carrera": "Todas",
+    "descripcion": "Nuevo club dedicado a la fotografía digital y análoga. Organizamos salidas fotográficas y workshops de edición.",
+    "imagenUrl": "https://elestudiantedigital.com/wp-content/uploads/2019/03/lentes-de-fotos.jpg",
+    "numMiembros": 8,
+    "tipo": "Cultural",
+    "requisitos": "Tener cámara propia (digital o análoga)",
+    "administrador": "Pablo Sánchez",
+    "enlaces": {
+      "instagram": "https://instagram.com/club-fotografia",
+      "whatsapp": "https://chat.whatsapp.com/club-fotografia"
+    }
+  },
+  {
+    "id": "ng3",
+    "nombre": "Grupo de Debate",
+    "facultad": "Todas las Facultades",
+    "carrera": "Todas",
+    "descripcion": "Nuevo grupo para practicar el arte del debate y la argumentación. Participamos en competencias interuniversitarias.",
+    "imagenUrl": "https://archive-share.america.gov/wp-content/uploads/2015/06/shutterstock_199091393_revised.jpg",
+    "numMiembros": 15,
+    "tipo": "Cultural",
+    "requisitos": "Interés en el debate y la oratoria",
+    "administrador": "Laura Méndez",
+    "enlaces": {
+      "discord": "https://discord.gg/grupo-debate",
+      "whatsapp": "https://chat.whatsapp.com/grupo-debate"
+    }
+  }
+]

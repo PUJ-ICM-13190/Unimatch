@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ajiaco.unimatch">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UniMatch"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDb4gtVD7Mxeh5QTX7nOHCExfJPMK3FAh4"/>
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilDetalladoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatDetailActivity"
+            android:exported="false" /> <!-- SplashActivity es la actividad de inicio -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- MainActivity para la navegación -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.UniMatch" /> <!-- OnboardingActivity, actividad que explica las características de la app -->
+        <activity
+            android:name=".ui.OnboardingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.UniMatch" /> <!-- Pantalla de selección: Iniciar sesión o registrarse -->
+        <activity
+            android:name=".ui.SelectionActivity"
+            android:exported="true" /> <!-- Pantalla de inicio de sesión -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Pantalla de registro de nuevos usuarios -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" /> <!-- Pantalla para recuperar contraseña -->
+        <activity
+            android:name=".ui.PasswordRecoveryActivity"
+            android:exported="true" /> <!-- Pantalla de verificación de correo electrónico -->
+        <activity
+            android:name=".ui.VerificationActivity"
+            android:exported="true" /> <!-- Pantalla para la creación de perfil post-registro -->
+        <activity
+            android:name=".ui.ProfileCreationActivity"
+            android:exported="true" /> <!-- Pantalla principal de matchmaking -->
+        <activity
+            android:name=".MatchmakingActivity"
+            android:exported="true" /> <!-- Pantalla para seleccionar tipo de conexión -->
+        <activity
+            android:name=".ConnectionTypeSelectionActivity"
+            android:exported="true" /> <!-- Actividades adicionales -->
+        <activity
+            android:name=".PersonalProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatsGrupalesActivity"
+            android:exported="false" />
+        <activity android:name=".SuccessfulMatchActivity" />
+        <activity android:name=".UniMatchSwipeActivity" />
+        <activity android:name=".FiltersActivity" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".EventoDetalleActivity"></activity>
+        <activity
+            android:name=".MapaEventoActivity"
+            android:label="Ubicación del evento" />
+        <activity android:name=".PremiumSubscriptionActivity"></activity>
+        <activity android:name=".GrupoDetalleActivity"></activity>
+    </application>
+
+</manifest>
