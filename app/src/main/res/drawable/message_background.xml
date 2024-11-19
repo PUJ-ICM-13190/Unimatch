@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#33FFA500" /> <!-- Naranja translúcido (el código 33 hace el color más transparente) -->
+    <corners android:radius="16dp"/>    <!-- Esquinas redondeadas -->
+    <padding
+        android:left="12dp"
+        android:top="8dp"
+        android:right="12dp"
+        android:bottom="8dp"/>
+</shape>

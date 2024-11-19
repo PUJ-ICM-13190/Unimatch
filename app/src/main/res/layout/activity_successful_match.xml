@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessfulMatchActivity">
+
+    <TextView
+        android:id="@+id/textViewMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Match!"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewUser1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/imageViewUser1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewUser2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMatch"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewUser2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewUser1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewUser1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUser1"
+        tools:src="@tools:sample/avatars" />
+
+    <!-- EditText para escribir el mensaje -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu mensaje"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUser1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"
+        android:inputType="text" />
+
+    <!-- Botón para enviar el mensaje -->
+    <ImageView
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Enviar"
+        android:src="@android:drawable/ic_menu_send"
+        app:layout_constraintTop_toTopOf="@+id/editTextMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextMessage"
+        android:padding="8dp"
+        app:tint="@android:color/holo_green_light" />
+
+    <!-- Botones "Iniciar Chat" y "Seguir Explorando" -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonKeepExploring"
+        android:layout_width="381dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Seguir Explorando"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
