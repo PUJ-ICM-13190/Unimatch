@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "titulo": "Torneo de Fútbol Interfacultades",
+    "fecha": "2024-11-22",
+    "lugar": "Campo Deportivo Universitario",
+    "latitud": 4.653332,
+    "longitud": -74.083652,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.Tjq0KbIox4d2lVawaHdg7QHaE7?rs=1&pid=ImgDetMain",
+    "descripcion": "Compite contra otros equipos de diferentes facultades por el campeonato.",
+    "precio": null
+  },
+  {
+    "id": "2",
+    "titulo": "Conferencia sobre Inteligencia Artificial",
+    "fecha": "2024-12-03",
+    "lugar": "Auditorio Principal",
+    "latitud": 4.661292,
+    "longitud": -74.073960,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.8c_u9gedsvhB3SU9Pn6sMAHaEG?rs=1&pid=ImgDetMain",
+    "descripcion": "Explora el futuro de la IA con expertos del sector tecnológico.",
+    "precio": 5.00
+  },
+  {
+    "id": "3",
+    "titulo": "Feria de Clubes y Sociedades",
+    "fecha": "2024-11-30",
+    "lugar": "Plaza Central",
+    "latitud": 4.654282,
+    "longitud": -74.083700,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.OskO5cuFjDEWlSBC_l-BugHaE8?rs=1&pid=ImgDetMain",
+    "descripcion": "Descubre las diferentes actividades extracurriculares en las que puedes participar.",
+    "precio": null
+  },
+  {
+    "id": "4",
+    "titulo": "Hackathon de 24 Horas",
+    "fecha": "2024-12-07",
+    "lugar": "Laboratorio de Computación",
+    "latitud": 4.658452,
+    "longitud": -74.078000,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.SiVeFrZjOhdaQmcd5NI-CQHaEK?rs=1&pid=ImgDetMain",
+    "descripcion": "Forma un equipo y resuelve desafíos de programación en 24 horas.",
+    "precio": null
+  },
+  {
+    "id": "5",
+    "titulo": "Concierto de Bandas Universitarias",
+    "fecha": "2024-12-15",
+    "lugar": "Auditorio al Aire Libre",
+    "latitud": 4.661000,
+    "longitud": -74.076800,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.y3WPPySMoum6lw34d3DgqwHaDu?rs=1&pid=ImgDetMain",
+    "descripcion": "Disfruta de las mejores bandas locales formadas por estudiantes.",
+    "precio": 3.00
+  },
+  {
+    "id": "6",
+    "titulo": "Taller de Desarrollo Personal y Liderazgo",
+    "fecha": "2024-11-29",
+    "lugar": "Sala de Conferencias B",
+    "latitud": 4.659732,
+    "longitud": -74.081300,
+    "imagenUrl": "https://th.bing.com/th/id/OIP.YWPVt1JWPA3ACTfIasBorwHaEo?rs=1&pid=ImgDetMain",
+    "descripcion": "Mejora tus habilidades de liderazgo con este taller práctico.",
+    "precio": 10.00
+  },
+  {
+    "id": "7",
+    "titulo": "Cine al Aire Libre: Ciclo de Películas Clásicas",
+    "fecha": "2024-12-05",
+    "lugar": "Jardines Universitarios",
+    "latitud": 4.660540,
+    "longitud": -74.072830,
+    "imagenUrl": "https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2020/04/festivales-de-cine-2.jpg?fit=2800%2C1787&ssl=1&is-pending-load=1",
+    "descripcion": "Una noche de cine bajo las estrellas con proyecciones de clásicos.",
+    "precio": null
+  },
+  {
+    "id": "8",
+    "titulo": "Simulacro de Naciones Unidas",
+    "fecha": "2024-12-09",
+    "lugar": "Salón de Usos Múltiples",
+    "latitud": 4.652010,
+    "longitud": -74.077600,
+    "imagenUrl": "https://schweitzer.edu.ar/wp-content/uploads/2016/09/Simulacro_Naciones_Unidas_2016_Secundario_Avellaneda_Schweitzer-3.jpg",
+    "descripcion": "Participa en debates sobre temas globales representando a diferentes países.",
+    "precio": 7.00
+  },
+  {
+    "id": "9",
+    "titulo": "Exposición de Proyectos de Ingeniería",
+    "fecha": "2024-12-02",
+    "lugar": "Edificio de Ingeniería",
+    "latitud": 4.660120,
+    "longitud": -74.078900,
+    "imagenUrl": "https://girardot.unipiloto.edu.co/wp-content/uploads/2023/05/expo-ingenierias-1.jpg",
+    "descripcion": "Presentación de los mejores proyectos tecnológicos desarrollados por estudiantes.",
+    "precio": null
+  },
+  {
+    "id": "10",
+    "titulo": "Jornada de Voluntariado Universitario",
+    "fecha": "2024-11-27",
+    "lugar": "Diferentes Comunidades",
+    "latitud": 4.658320,
+    "longitud": -74.076520,
+    "imagenUrl": "https://th.bing.com/th/id/R.2e3a24f93d23a6d1aba5d0a17bde9ea5?rik=0D9sa8ODvUWCfA&pid=ImgRaw&r=0",
+    "descripcion": "Únete a la comunidad estudiantil para ayudar en proyectos sociales y ambientales.",
+    "precio": null
+  }
+]

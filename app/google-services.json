@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "30619621394",
+    "firebase_url": "https://unimatch-383a1-default-rtdb.firebaseio.com",
+    "project_id": "unimatch-383a1",
+    "storage_bucket": "unimatch-383a1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30619621394:android:bbff43268b76ddd37e60cb",
+        "android_client_info": {
+          "package_name": "com.ajiaco.unimatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00LfP9j6WHdVZjih6J8bEq6OAHlno-a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30619621394:android:4ea865a6511825307e60cb",
+        "android_client_info": {
+          "package_name": "com.ajiaco.unimatch.ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00LfP9j6WHdVZjih6J8bEq6OAHlno-a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30619621394:android:c1bd1818b41e02447e60cb",
+        "android_client_info": {
+          "package_name": "com.ajiaco.unimatchh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00LfP9j6WHdVZjih6J8bEq6OAHlno-a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
