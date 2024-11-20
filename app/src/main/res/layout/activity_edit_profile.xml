@@ -108,7 +108,7 @@
             android:layout_below="@id/textarea"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:text="Inormación Adicional"
+            android:text="Información Adicional"
             android:textSize="20sp"
             android:lineSpacingExtra="10sp"
             android:textStyle="bold"
@@ -294,15 +294,27 @@
         </TableLayout>
 
         <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="#f9623e"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/table2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Regresar"
             android:backgroundTint="#f9623e"
             android:textColor="@android:color/white"
-            android:layout_below="@id/table2"
+            android:layout_below="@id/btnSave"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"/>
+
 
     </RelativeLayout>
 
