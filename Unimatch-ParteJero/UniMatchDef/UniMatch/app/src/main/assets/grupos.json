@@ -1,0 +1,49 @@
+[
+  {
+    "id": "g1",
+    "nombre": "Grupo de Estudio Cálculo",
+    "facultad": "Facultad de Ingeniería",
+    "carrera": "Ingeniería de Sistemas",
+    "descripcion": "Grupo dedicado al estudio y práctica de Cálculo I, II y III. Realizamos sesiones de estudio semanales y resolvemos ejercicios en conjunto.",
+    "imagenUrl": "https://content.gnoss.ws/imagenes/Usuarios/ImagenesCKEditor/00212245-2a00-47f8-a5c9-1f757e78c582/4e271a64-10d7-46ca-86b6-524e522b0c6a.jpg",
+    "numMiembros": 45,
+    "tipo": "Académico",
+    "requisitos": "Estudiantes de ingeniería cursando cálculo",
+    "administrador": "Juan Pérez",
+    "enlaces": {
+      "whatsapp": "https://chat.whatsapp.com/grupo-calculo",
+      "discord": "https://discord.gg/grupo-calculo"
+    }
+  },
+  {
+    "id": "g2",
+    "nombre": "Club de Programación",
+    "facultad": "Facultad de Ingeniería",
+    "carrera": "Ingeniería de Sistemas",
+    "descripcion": "Nos reunimos para practicar programación competitiva, resolver problemas algorítmicos y prepararnos para competencias.",
+    "imagenUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTtxC-smIoo6qVTD8TLt9xS7RO3ZLBqQ8zQ&s",
+    "numMiembros": 32,
+    "tipo": "Académico",
+    "requisitos": "Conocimientos básicos de programación",
+    "administrador": "Ana García",
+    "enlaces": {
+      "discord": "https://discord.gg/club-programacion",
+      "github": "https://github.com/club-programacion"
+    }
+  },
+  {
+    "id": "g3",
+    "nombre": "Equipo de Fútbol Ingeniería",
+    "facultad": "Facultad de Ingeniería",
+    "carrera": "Todas",
+    "descripcion": "Equipo oficial de fútbol de la facultad de ingeniería. Participamos en torneos interfacultades y organizamos partidos amistosos.",
+    "imagenUrl": "https://www.javeriana.edu.co/recursosdb/11441945/11883282/portada-nueva-torneo.jpg/fe87450c-a738-b541-d639-89e590bda79c?version=1.0&t=1717791206325&download=true",
+    "numMiembros": 25,
+    "tipo": "Deportivo",
+    "requisitos": "Estudiantes de ingeniería con experiencia en fútbol",
+    "administrador": "Carlos Rodríguez",
+    "enlaces": {
+      "whatsapp": "https://chat.whatsapp.com/equipo-futbol"
+    }
+  }
+]

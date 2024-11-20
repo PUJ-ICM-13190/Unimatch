@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UniMatch</string>
+    <string name="splash_logo_description">Logo de Unimatch</string>
+    <string name="terminos">Al registrarte aceptas nuestros Términos y\nVe cómo utilizamos tus datos en nuestra Política de Privacidad</string>
+    <string name="verificacion">Hemos enviado un correo de verificación a tu cuenta.</string>
+    <array name="initial_slider_values">
+        <item>18</item>
+        <item>26</item>
+    </array>
+    <string name="bienvenida">¡Bienvenido!</string>
+    <string name="ver_eventos">Ver Eventos</string>
+    <string name="eventos_disponibles">Eventos Disponibles</string>
+    <string name="eventos_descripcion">Descubre los próximos eventos y actividades</string>
+    <string name="icono_eventos">Icono de eventos</string>
+    <string name="hazte_premium">Hazte Premium</string>
+    <string name="premium_descripcion">Desbloquea todas las funciones y disfruta de una experiencia sin límites</string>
+    <string name="icono_premium">Icono Premium</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30619621394",
+    "project_id": "unimatch-383a1",
+    "storage_bucket": "unimatch-383a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30619621394:android:4ea865a6511825307e60cb",
+        "android_client_info": {
+          "package_name": "com.ajiaco.unimatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00LfP9j6WHdVZjih6J8bEq6OAHlno-a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
