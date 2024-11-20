@@ -23,9 +23,15 @@ import android.widget.Toast
 import com.ajiaco.unimatch.PersonalProfileActivity
 import com.ajiaco.unimatch.ui.ProfileCreationActivity
 import com.ajiaco.unimatch.ui.ProfileFragment
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.auth.FirebaseAuth
+import android.widget.Button
 
 
 class EditProfileActivity : AppCompatActivity() {
+
+    private lateinit var database: DatabaseReference
 
     private lateinit var binding: ActivityEditProfileBinding
     private lateinit var imageView: ImageView
@@ -38,6 +44,7 @@ class EditProfileActivity : AppCompatActivity() {
         binding = ActivityEditProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        database = FirebaseDatabase.getInstance().reference
         // Inicializar imageView
         imageView = binding.image
 
@@ -49,6 +56,7 @@ class EditProfileActivity : AppCompatActivity() {
         binding.btnCamera.setOnClickListener {
             checkCameraPermission()
         }
+
 
         // Configurar botón para la descripción (textarea)
         binding.textarea.setOnClickListener {
@@ -74,6 +82,9 @@ class EditProfileActivity : AppCompatActivity() {
             val intent = Intent(this, PersonalProfileActivity::class.java)
             startActivity(intent)
 
+        }
+        binding.btnSave.setOnClickListener {
+            saveProfileData()
         }
 
     }
@@ -235,4 +246,34 @@ class EditProfileActivity : AppCompatActivity() {
             }
           }
        }
+    private fun saveProfileData() {
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return
+        val profileUpdates = mapOf(
+            "description" to binding.textarea.text.toString(),
+            "occupation" to ((binding.table1.getChildAt(0) as TableRow).getChildAt(1) as TextView).text.toString(),
+            "gender" to ((binding.table1.getChildAt(1) as TableRow).getChildAt(1) as TextView).text.toString(),
+            "education" to ((binding.table1.getChildAt(2) as TableRow).getChildAt(1) as TextView).text.toString()
+        )
+
+        database.child("users").child(userId).updateChildren(profileUpdates)
+            .addOnSuccessListener {
+                Toast.makeText(this, "Profile updated successfully", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "Failed to update profile", Toast.LENGTH_SHORT).show()
+            }
+    }
+    private fun loadProfileData() {
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return
+        database.child("users").child(userId).get()
+            .addOnSuccessListener { snapshot ->
+                binding.textarea.setText(snapshot.child("description").value.toString())
+                updateTableValue(binding.table1, 0, snapshot.child("occupation").value.toString())
+                updateTableValue(binding.table1, 1, snapshot.child("gender").value.toString())
+                updateTableValue(binding.table1, 2, snapshot.child("education").value.toString())
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "Failed to load profile", Toast.LENGTH_SHORT).show()
+            }
+    }
 }
